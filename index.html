@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+        <head>
+               <!--
+                  LIS 2360:  Web Application Development
+                  Lesson 5:  JavaScript 2
+                  Project Title: Currency Exchange Calculator 
+                  Filename: index.html
+            
+                  Author: 
+                  Date:   
+               -->
+               <meta charset="utf-8" />
+               <meta id="viewport" content="width=device-width, initial-scale=1.0">
+               
+               <title>Currency Calculator</title>
+               <link rel="stylesheet" href="styles.css" />
+               <script src="currencyCalculator.js"></script>
+        </head>
+
+        <body>
+           <header>
+              <h1>
+                    Currency Converter </br> 
+              </h1>
+              <p><i>(as of October 23, 2018)</i></p>
+           </header>
+        
+           <article>
+              
+                 <form class = "bs-example bs-example-form" role = "form">
+                 <fieldset id="curencyCalculator">
+                     
+                    <legend>Currrency Exchange Calculator </legend>
+                    The Currency Calculator allows the user to quickly determine the exchange rate for their <b> United States Dollar (USD)</b>  to a list of global currencies.
+                    
+                    <br><br><br>
+                    
+                    <label for="usdExchange"><b> How much US Dollars do you want to exchange?</b>  
+                    <br> <br> 
+                    <span class="input-group-addon">$</span>
+                      <input type="text"  id="usdAmount" name="amount"  />
+                      <span class="input-group-addon"></span>
+                    </label>
+                    
+                    <br><br>
+
+                <!--*******************************************************************************
+                 * Task 1:  COMPLETE THE LIST OF COUNTRIES FOR THE DROPDOWN MENU: 
+                 * 
+                 *          Complete the list for the dropdown menu, which lists 15 countries and 
+                 *          their abbreviations.  Use the table in the assignmet description to 
+                 *          to complete the menu.  
+                 * 
+                 * HINT:    Example of adding the first two countries to the menu:
+                 *
+                 *          <option value="0">Australian Dollar (AUD)</option>
+                 *          <option value="1">Aruban Florin (AWG)</option>
+                 *           
+                 *                       INSERT YOUR CODE BELOW!
+                *******************************************************************************-->
+        
+        
+                    <label for="globalList"><br><b>What currency do you want to exchange to?</b> </label><br><br>
+                    <select id="country" name="globalList" required="required">
+                       <option value="0">Australian Dollar (AUD)</option>
+                       <option value="1">Aruban Florin (AWG)</option>
+  
+  
+  
+  
+                    </select>
+                
+                    <br><br>
+                    
+                    <!--*****************************************************************************************************
+                    *  This section in the HTML code creates TWO buttons:  1)  Calculate and 2)  Clear Calculator button.  
+                    *
+                    *  Explanation:  The onclick method is used to associate an event with each button.  When the
+                    *  user clicks either button, the methods stated will be executed to handle that event.  For instance,
+                    *  when the user clicks the 'Calculate' button the currencyCalculator() code will 
+                    *  execute and when the user clicks the 'Clear Calculator' button, the clearButton() method will execute.
+                    *
+                    *                                THIS SECTION IS COMPLETE.
+                    ********************************************************************************************************-->         
+                
+                    <fieldset id="submitbutton">
+                       <button type="button" id="submitBtn" onclick="calculateCurrency()">Calculate</button>
+        
+                       <button type="button" id="clearBtn" onclick="clearButton()">Clear Calculator </button>
+                    </fieldset>
+        
+                    </fieldset>
+                 
+                    <!--******************************************************************************************************
+                    *  This section in the HTML code defines id's or placeholders where the result of the calculations
+                    *  will be place.  The getElementById() method used later in the program uses these id's to place 
+                    *  the results of the calculations on the HTML page.
+                    *   
+                    *  The id defined is:  currencyExchangeInfo
+                    *
+                    *                                THIS SECTION IS COMPLETE.
+                    ********************************************************************************************************-->    
+        
+                     <fieldset id="summary">
+                     <legend><span>Currency Exchange Details:</span></legend>
+                    
+                     <fieldset id="calculationinfo">
+                        <label>  
+                        
+                            <p id="currencyExchangeInfo">  </p>
+                            
+                        </label>  
+                     </fieldset>
+                  
+                     <br>
+                    
+                     <center>To view an example of a currency calculator, visit:  <a href="https://www.oanda.com/currency/converter/" target="_blank">https://www.oanda.com/currency/converter/</a></center>
+        
+                </fieldset>
+              </form>
+           </article>
+        
+         </body>
+</html>
