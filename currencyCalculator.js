@@ -45,7 +45,20 @@ function calculateCurrency(){
         //to the exchange rate for each country
         //USE THE TABLE PROVIDED FOR VALUES!!!
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
-        var AWG = 1.78511;
+        var AWG = 1.78511; //exchange for Aruban florin 
+        var BSD = 1.0000; //exchange for bahamiam dollar 
+        var XBT = 0.00015; //exchange for bitcoin 
+        var GBP = 0.76826; //exchange for british pound 
+        var CAD = 1.30976; //exchange for canadian dollar 
+        var CLP = 683.205; //exchange for chilean pesso 
+        var CNY = 6.93780; //exchange for chinese yuan renminibi
+        var CUP = 25.0000; //exchange for cuban peso 
+        var DKK = 6.49079; //exchange for danish krone 
+        var EUR = 0.87007; //exchange for euro 
+        var EGP = 17.8726; //exchange for egyptian pound 
+        var HKD = 7.83955; //exchange for hong kong dollar 
+        var IRR = 42000; //exchange for iranian rial 
+        var NGN = 361.969; //exchange for nigerian naira
 
          
          
@@ -79,7 +92,19 @@ function calculateCurrency(){
          
          //Calculate the exchange rate and set the country prefix using a selection statement
 
-
+        if (country == "0"){
+            exchangeRate = usdAmount * AUD;
+            countryName = "AUD"; 
+        }
+        else if (country == "1"){
+            exchangeRate = usdAmount * AWG;
+            countryName = "AWG";
+        }
+        else if (country == "2"){
+            exchangeRate = usdAmount * BSD;
+            countryName = "BSD";
+        }
+                
 
 
 
@@ -102,7 +127,8 @@ function calculateCurrency(){
          *                                INSERT YOUR CODE BELOW!
         ***********************************************************************************************/                                                                                                               
 
-
+        document.getElementById("currencyExchangeInfo").innerHTML = "<h2> <center> Selling $ " + usdAmount.toFixed(2) + "USD ===> Buys $" + exchangeRate.toFixed(2) + countryName + " </center> </h2> ";
+        
 
 
 
@@ -146,10 +172,10 @@ function clearButton () {
         
         
         //Remove the text from the textfield
-        
+        document.getElementById("currencyExchangeInfo").innerHTML = "";
         
         
         //Remove the currency exchange information from the document where the id is: "currencyExchangeInfo"
-
+        document.getElementById("usdAmount").value = "";
 
 }//end of clearButton function

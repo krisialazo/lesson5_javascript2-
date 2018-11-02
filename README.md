@@ -4,20 +4,19 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+(October 30, 2018)
 
 ### Student Name:  
-(First and Last Name)
+(Krisia Lazo)
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+(In this project we create a currency exchange calculator. You can input any amount in US dollars and choose what currency you want the output to come out as. )
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://krisialazo.github.io/lesson5_javascript2-/.
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. (In an array, a set of data can be represented by a single varible. When you want to call a specific variable, you can call it using numbers starting at 0. You can also assign specific values to the different data provided.)
+2. (Else/if statements execute one action when the condition is true and another action if the condition is false)
+3. (we also learned about functions and how they are defined)
 
